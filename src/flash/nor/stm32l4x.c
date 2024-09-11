@@ -80,6 +80,12 @@
  * http://www.st.com/resource/en/reference_manual/dm00451556.pdf
  */
 
+/* STM32C0xxx series for reference.
+ *
+ * RM0490 (STM32C0x1)
+ * http://www.st.com/resource/en/reference_manual/dm00781702.pdf
+ */
+
 /* STM32G0xxx series for reference.
  *
  * RM0444 (STM32G0x1)
@@ -320,6 +326,7 @@ static const struct stm32l4_rev stm32g47_g48xx_revs[] = {
 
 static const struct stm32l4_rev stm32l4r_l4sxx_revs[] = {
 	{ 0x1000, "A" }, { 0x1001, "Z" }, { 0x1003, "Y" }, { 0x100F, "W" },
+	{ 0x101F, "V" },
 };
 
 static const struct stm32l4_rev stm32l4p_l4qxx_revs[] = {
@@ -327,7 +334,7 @@ static const struct stm32l4_rev stm32l4p_l4qxx_revs[] = {
 };
 
 static const struct stm32l4_rev stm32l55_l56xx_revs[] = {
-	{ 0x1000, "A" }, { 0x2000, "B" },
+	{ 0x1000, "A" }, { 0x2000, "B" }, { 0x2001, "Z" },
 };
 
 static const struct stm32l4_rev stm32g49_g4axx_revs[] = {
@@ -336,6 +343,7 @@ static const struct stm32l4_rev stm32g49_g4axx_revs[] = {
 
 static const struct stm32l4_rev stm32u59_u5axx_revs[] = {
 	{ 0x1000, "A" }, { 0x1001, "Z" }, { 0x1003, "Y" }, { 0x2000, "B" },
+	{ 0x2001, "X" }, { 0x3000, "C" },
 };
 
 static const struct stm32l4_rev stm32u57_u58xx_revs[] = {
